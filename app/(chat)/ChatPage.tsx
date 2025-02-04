@@ -31,7 +31,7 @@ export default function ChatPage() {
     }
   }, [messages]);
   const handleSendMesage = (message: string) => {
-    const data = { room, message, sernder: userName };
+    const data = { room, message, sender: userName };
     setMessages((prev) => [...prev, { sender: userName, message }]);
     socket.emit("message", data);
   };
