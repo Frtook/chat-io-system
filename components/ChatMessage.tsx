@@ -26,8 +26,8 @@ export default function ChatMessage({
           "bg-gray-100 ": !isOwnMessage && !isSystemMessage,
         })}
       >
-        {!isSystemMessage && <p className="bg-gray-500">{sender}</p>}
-        <p>{message}</p>
+        {!isSystemMessage && <p className="text-gray-600 text-sm">{sender}</p>}
+        <p className="text-xl">{message}</p>
       </div>
     </div>
   );
